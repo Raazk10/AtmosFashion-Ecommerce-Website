@@ -1,6 +1,6 @@
 export default {
-  title: "Category",
-  name: "category",
+  title: "Tag",
+  name: "tag",
   type: "document",
   fields: [
     {
