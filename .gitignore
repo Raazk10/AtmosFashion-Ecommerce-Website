@@ -1,1 +1,8 @@
 .DS_STORE
+_studio/package.json
+_studio/node_modules/*
+_studio/node_modules/lodash/
+_studio/node_modules/.package-lock.json
+_studio/package-lock.json
+
+_studio/.sanity/runtime/index.html
