@@ -4,15 +4,13 @@ export default {
   type: "document",
   fields: [
     {
-      title: "Mainpage",
-      name: "mainpage",
-      type: "object",
-      fields: [
+      title: "Hero Image",
+      name: "heroImage",
+      type: "array",
+      of: [
         {
-          title: "HeroImage",
-          name: "heroImages",
-          type: "array",
-          of: [{ type: "image" }],
+          type: "image",
+          options: { hotspot: true },
         },
       ],
     },
