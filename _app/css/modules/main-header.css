@@ -1,0 +1,33 @@
+.main-header__logo {
+	background: linear-gradient(to bottom, var(--color-box-background), rgba(19, 18, 18, 0));
+	color: var(--color-box-foreground);
+	padding: var(--gap-box-padding);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-header__logo img {
+	max-width: 414px;
+	max-height: 99px;
+	width: 100%;
+	height: auto;
+}
+
+
+.main-header__button {
+	background: var(--color-contact-button);
+	color: var(--color-text-white);
+	padding: var(--gap-box-padding);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-header__button--contact {
+	border: none;
+	padding: 36px 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+}
