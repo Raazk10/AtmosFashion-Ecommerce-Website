@@ -1,0 +1,9 @@
+@import 'reset.css';
+@import 'variables.css';
+@import 'grid.css';
+@import 'fonts.css';
+@import 'base.css';
+
+@import 'modules/main-header.css';
+@import 'modules/main-footer.css';
+@import 'modules/heroSection.css';

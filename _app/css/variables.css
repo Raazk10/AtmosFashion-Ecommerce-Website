@@ -1,0 +1,28 @@
+:root {
+	--color-background: #B9B0B0;
+	--color-box-background: rgba(19, 18, 18, 1);
+	--color-text-black: #000000;
+	--color-text-white: #FFFFFF;
+	--color-contact-button: #357434;
+	--color-contact-button-hover: var(--color-button-hover);
+
+	--color-button: #426946;
+	--color-button-hover: #2C3D2E;
+
+	--color-filter-button: var(--color-text-white);
+	--color-filter-button-hover: var(--color-text-black);
+	--color-filter-section-background: #D9D9D9;
+
+	--color-product-card-background: var(--color-text-white);
+
+	--gap-column: 1rem;
+	--gap-padding: 1rem;
+	--gap-row: 1rem;
+	--gap-section: 10px;
+	--gap-product-information: 40px;
+
+	--gap-box-padding: 10px;
+	--gap-button-padding: 0.5rem;
+	--gap-proudct: 10px;
+
+}
