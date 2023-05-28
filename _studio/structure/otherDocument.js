@@ -9,7 +9,6 @@ export default (Structure) => {
       divider(),
       documentTypeListItem("category"),
       divider(),
-
       documentTypeListItem("tag"),
     ]);
 };
