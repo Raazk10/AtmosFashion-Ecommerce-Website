@@ -4,63 +4,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AtmosFashion</title>
+	<title>Contact | AtmosFashion</title>
 
 	<link rel="icon" href="/_app/assets/fav-icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	<link rel="stylesheet" href="/_app/css/main.css">
-	<script type="module" src="/_app/js/main.js"></script>
+	<script type="module" src="/_app/js/contact.js"></script>
 </head>
 
 <body>
 	<header class="main-header grid">
 		<div class="main-header__logo grid__column--8">
-			<img src="./_app/assets/icon.png" alt="atmosfashion logo">
-		</div>
-		<div class="main-header__button grid__column--4">
-			<a href="/contact">
-				<button class="main-header__button--contact">Contact-Us</button>
+			<a href="/index.html" aria-label="back to homepage">
+				<img src="/_app/assets/icon.png" alt="atmosfashion logo" />
 			</a>
+		</div>
+
+		<div class="main-header__button grid__column--4">
+			<button id="goBackButton" class="main-header__button--contact"> Go Back</button>
 		</div>
 	</header>
 
-	<section class="heroSection grid">
-		<div class="grid__column--12">
-			<div class="heroSection__content">
-				<h1 class="heroSection__header">Elevate Your Style</h1>
-				<h2 class="heroSection__sub-header">Discover our latest collection of sustainable, high-quality clothing.
-				</h2>
-				<a href="#mainProducts">
-					<button class="heroSection__button">See
-						our products below</button></a>
-			</div>
-			<img class="heroSection__image" src="./_app/assets/hero_image.jpeg"
-				alt="A woman with hat and glass with black coat">
+	<main class="contact-details grid">
+		<div class="contact-details__content grid__column--12"></div>
+		<div class="contact-details__info grid__column--12">
+			<h2 class="contact-details__subtitle">Contact Information:</h2>
+			<p class="contact-details__info-name"></p>
+			<p class="contact-details__info-email"></p>
+			<p class="contact-details__info-phone"></p>
+			<p class="contact-details__info-address"></p>
 		</div>
-	</section>
-
-	<section class="filterSection grid">
-		<div class="grid__column--12">
-			<div class="filterSection__row">
-				<button class="filterSection__button" data-filter="Men">Men</button>
-				<button class="filterSection__button" data-filter="Women">Women</button>
-			</div>
-			<div class="filterSection__row">
-				<button class="filterSection__button" data-filter="Pant">Pant</button>
-				<button class="filterSection__button" data-filter="T-Shirt">T-Shirt</button>
-				<button class="filterSection__button" data-filter="Shoe">Shoe</button>
-			</div>
-		</div>
-	</section>
-
-	<main id="mainProducts" class="frontpage-products grid">
-		<!--dynamically added JS part-->
-
 	</main>
 
 	<footer class="main-footer grid">
 		<div class="grid__column--8 main-footer__logo">
-			<img src="./_app/assets/icon.png" alt="Logo" />
+			<img src="/_app/assets/icon.png" alt="Logo" />
 		</div>
 		<div class="grid__column--4 main-footer__icon">
 			<div>

@@ -1,0 +1,38 @@
+.contact-details__content {
+	background-color: var(--color-background);
+	color: var(--color-text-black);
+	padding: var(--gap-box-padding);
+	text-transform: none;
+}
+
+.contact-details__subtitle {
+	font-size: 1.1rem;
+	margin-bottom: var(--gap-row);
+}
+
+.contact-details__info {
+	background-color: var(--color-box-background);
+	color: var(--color-text-white);
+	padding: var(--gap-box-padding);
+	margin-top: var(--gap-row);
+	margin-bottom: var(--gap-row);
+	text-transform: none;
+}
+
+.contact-details__title {
+	font-size: 1.2rem;
+	margin-bottom: var(--gap-row);
+}
+
+.contact-details__paragraph {
+	margin-bottom: var(--gap-row);
+}
+
+.contact-details__info-item {
+	margin-bottom: var(--gap-row);
+}
+
+.contact-details__info-value {
+	font-weight: bold;
+
+}
