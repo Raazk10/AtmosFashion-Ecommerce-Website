@@ -1,3 +1,3 @@
-import MainPageProduct from "./modules/renderMainpageProduct.js";
+import FrontpageProduct from "./modules/renderFrontpageProduct.js";
 
-MainPageProduct();
+FrontpageProduct();
