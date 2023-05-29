@@ -47,7 +47,9 @@ export default async function FrontpageProduct(filter = null) {
     productPrice.textContent = formatPrice(product_item.price);
 
     const productShopButton = document.createElement("button");
-    productShopButton.classList.add("frontpage-products__product-shop-button");
+    productShopButton.classList.add(
+      "frontpage-products__product-details-button"
+    );
     productShopButton.textContent = "More Details";
 
     productFigure.appendChild(productImg);
