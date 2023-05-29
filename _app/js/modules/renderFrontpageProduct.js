@@ -25,7 +25,7 @@ export default async function FrontpageProduct(filter = null) {
     const product = document.createElement("a");
     product.classList.add("frontpage-products__product", "grid__column--3");
 
-    product.setAttribute("href", `/product/?${product_item.slug}`);
+    product.setAttribute("href", `/product-details/?${product_item.slug}`);
 
     const productFigure = document.createElement("figure");
     productFigure.classList.add("frontpage-products__product-image");

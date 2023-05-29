@@ -31,3 +31,7 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+.main-header__button--contact:hover {
+	text-decoration: underline;
+}
