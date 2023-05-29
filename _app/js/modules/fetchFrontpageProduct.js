@@ -9,7 +9,9 @@ import { sanity } from "../sanity.js";
 
 export default async function FetchFrontpageProduct(filter = null) {
   let query;
+  // Check if a filter is provided
   if (filter) {
+    // Construct query with filter
     query = `*[_type=='product' && '${filter}' in categories[]->name]{
       "categories": categories[]->name,
       "previewImage":preview.asset->url,
@@ -18,6 +20,7 @@ export default async function FetchFrontpageProduct(filter = null) {
       "slug": slug.current,
     }`;
   } else {
+    // Construct query without filter
     query = `*[_type=='product']{
       "previewImage":preview.asset->url,
       name,
@@ -28,6 +31,7 @@ export default async function FetchFrontpageProduct(filter = null) {
   }
 
   try {
+    // Fetch products using the constructed query
     const products = await sanity.fetch(query);
     return products;
   } catch (error) {
