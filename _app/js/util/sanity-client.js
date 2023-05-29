@@ -65,3 +65,5 @@ export function SanityClient(config) {
     fetch: query,
   };
 }
+
+// code provided during the class lecture by the teacher

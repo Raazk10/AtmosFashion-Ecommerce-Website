@@ -1,6 +1,13 @@
 import { sanity } from "../sanity.js";
 
-export default async function FetchMainpageProduct(filter = null) {
+/**
+ * Fetches frontpage products from Sanity CMS.
+ *
+ * @param {string} filter - Optional filter to retrieve products based on categories.
+ * @returns {Promise<Array>} A promise that resolves to an array of frontpage products.
+ */
+
+export default async function FetchFrontpageProduct(filter = null) {
   let query;
   if (filter) {
     query = `*[_type=='product' && '${filter}' in categories[]->name]{
