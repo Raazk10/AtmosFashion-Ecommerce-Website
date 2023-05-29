@@ -9,7 +9,6 @@ body {
 	background: var(--color-background);
 	color: var(--color-foreground);
 	padding: var(--gap-padding);
-	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 }
 
