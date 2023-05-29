@@ -4,13 +4,16 @@ import formatPrice from "../util/format-price.js";
 /**
  * Renders frontpage products on the page.
  * Fetches products from the server and creates DOM elements to display them.
+ *
+ * @param {string|null} filter - The filter to apply to the products.
  */
-export default async function FrontpageProduct() {
+
+export default async function FrontpageProduct(filter = null) {
   const productsContainer = document.querySelector(".frontpage-products");
   // Clear the current products before inserting new ones
   productsContainer.innerHTML = "";
 
-  const products = await FetchFrontpageProduct();
+  const products = await FetchFrontpageProduct(filter);
 
   /**
    * Creates a DOM element for a product item.
