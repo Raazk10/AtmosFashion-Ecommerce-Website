@@ -13,6 +13,7 @@ export default async function FetchProductDetails() {
 
   // Build the query to fetch product details based on the URL
   const query = `*[slug.current == '${urlString}']{
+    _id,
     "categories": categories[]->name,
     "previewImage": preview.asset->url,
     name,
