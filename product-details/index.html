@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	<link rel="stylesheet" href="/_app/css/main.css">
 	<script type="module" src="/_app/js/main.js"></script>
+	<script type="module" src="/_app/js/cart.js"></script>
+
 </head>
 
 <body>
@@ -21,8 +23,44 @@
 		</div>
 
 		<div class="main-header__button grid__column--4">
-			<button class="main-header__button--contact">Cart</button>
+			<button class="main-header__button--cart">Cart </button><span class="product-quantity"></span>
 		</div>
+		<!-- Cart Overlay -->
+		<div class="cart-overlay">
+			<div class="cart-overlay__header">
+				<h2>Your Products</h2>
+				<button class="cart-overlay__close-button">&times;</button>
+			</div>
+			<div class="cart-overlay__items--tables">
+				<div class="cart-overlay__items--table">Quantity </div>
+				<div class="cart-overlay__items--table">Name </div>
+				<div class="cart-overlay__items--table">Price </div>
+				<div class="cart-overlay__items--table"></div>
+			</div>
+			<div class="cart-overlay__items">
+
+
+
+
+				<div class="cart-overlay__product">
+
+					<!-- this to be added dynamically -->
+
+				</div>
+
+
+
+			</div>
+			<div class="cart-overlay__total">
+
+				<!-- cart item count updated from shoppingCart.js -->
+			</div>
+			<div class="cart-overlay__buttons">
+				<button class="cart-overlay__checkout-button">Checkout</button>
+				<button class="cart-overlay__empty-button">Empty</button>
+			</div>
+		</div>
+
 	</header>
 	<section class="slideShowProduct">
 		<div class="slideShowProduct__slides grid__column--8"></div>
@@ -33,12 +71,11 @@
 	</section>
 
 	<main class="product-details grid">
-
 		<div class="product-details__product-content grid__column--8">
 			<div class="product-name"></div>
 			<div class="product-subTitle"></div>
 			<div class="product-description"></div>
-			<div class="product-price"></div>
+			<div class="product-price" data-price=""></div>
 			<div class="product-brand"></div>
 			<div class="product-categories"></div>
 			<div class="product-details__sizes"></div>
@@ -46,11 +83,8 @@
 			<div class="product-details__stock"></div>
 			<button class="add-to-cart">Add to Cart</button>
 		</div>
+
 	</main>
-
-
-
-
 
 	<footer class="main-footer grid">
 		<div class="grid__column--8 main-footer__logo">
