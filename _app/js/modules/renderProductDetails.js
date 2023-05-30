@@ -1,5 +1,6 @@
 import FetchProductDetails from "./fetchProductDetails.js";
 import formatPrice from "../util/format-price.js";
+import slideShowProductImage from "./slideShowProductDetails.js";
 
 /**
  * Renders the product details on the page.
@@ -20,6 +21,7 @@ export default function RenderProductDetails() {
    * @param {Object} productDetails - The product details.
    */
   function renderHTML(productDetails) {
+    const slideShowSlides = document.querySelector(".slideShowProduct__slides");
     const productImageElement = document.querySelector(
       ".product-details__product-images"
     );
@@ -44,8 +46,15 @@ export default function RenderProductDetails() {
     );
 
     for (const [index, imageUrl] of productDetails.images.entries()) {
+      // create a new fig element
+      const figureElement = document.createElement("figure");
+      figureElement.classList.add(
+        "slideShowProduct__slide",
+        "slideShowProduct__slide--active"
+      );
       // Create a new <img> element
       const imgElement = document.createElement("img");
+      imgElement.classList.add("slideShowProduct__image");
 
       // Set the source URL of the image
       imgElement.src = imageUrl;
@@ -57,8 +66,10 @@ export default function RenderProductDetails() {
       imgElement.tabIndex = 0;
 
       // Append the image element to the productImageElement
-      productImageElement.appendChild(imgElement);
+      figureElement.appendChild(imgElement);
+      slideShowSlides.appendChild(figureElement);
     }
+    slideShowProductImage();
 
     productNameElement.textContent = productDetails.name;
     productSubtitleElement.textContent = productDetails.subtitle;
