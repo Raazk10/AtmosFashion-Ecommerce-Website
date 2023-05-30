@@ -15,7 +15,6 @@ export function readUrl() {
   // Check if the URL contains "product"
   if (allUrl.includes("product")) {
     const urlString = window.location.search;
-    console.log(urlString);
 
     // Check if there is a query string in the URL
     if (urlString) {
