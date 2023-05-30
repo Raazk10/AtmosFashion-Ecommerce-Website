@@ -13,6 +13,7 @@ export default async function FetchFrontpageProduct(filter = null) {
   if (filter) {
     // Construct query with filter
     query = `*[_type=='product' && '${filter}' in categories[]->name]{
+      _id,
       "categories": categories[]->name,
       "previewImage":preview.asset->url,
       name,
@@ -22,6 +23,7 @@ export default async function FetchFrontpageProduct(filter = null) {
   } else {
     // Construct query without filter
     query = `*[_type=='product']{
+      _id,
       "previewImage":preview.asset->url,
       name,
       price,
