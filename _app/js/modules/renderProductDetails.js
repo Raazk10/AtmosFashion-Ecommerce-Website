@@ -21,10 +21,10 @@ export default function RenderProductDetails() {
    * @param {Object} productDetails - The product details.
    */
   function renderHTML(productDetails) {
-    const slideShowSlides = document.querySelector(".slideShowProduct__slides");
-    const productImageElement = document.querySelector(
-      ".product-details__product-images"
+    const prodtuctDetailsContent = document.querySelector(
+      ".product-details__product-content"
     );
+    const slideShowSlides = document.querySelector(".slideShowProduct__slides");
     const productNameElement = document.querySelector(".product-name");
     const productSubtitleElement = document.querySelector(".product-subTitle");
     const productDescriptionElement = document.querySelector(
@@ -70,13 +70,17 @@ export default function RenderProductDetails() {
       slideShowSlides.appendChild(figureElement);
     }
     slideShowProductImage();
+    prodtuctDetailsContent.setAttribute("data-id", productDetails._id);
+    prodtuctDetailsContent.setAttribute("data-name", productDetails.name);
+    prodtuctDetailsContent.setAttribute("data-price", productDetails.price);
 
     productNameElement.textContent = productDetails.name;
     productSubtitleElement.textContent = productDetails.subtitle;
     productDescriptionElement.textContent = productDetails.description;
-    productPriceElement.textContent = formatPrice(
-      ` Price: ${productDetails.price}`
-    );
+    productPriceElement.textContent = `Price: ${formatPrice(
+      productDetails.price
+    )}`;
+
     productBrandElement.textContent = `Brand: ${productDetails.brand}`;
     productCategoriesElement.textContent = `Category: ${productDetails.categories.join(
       ", "

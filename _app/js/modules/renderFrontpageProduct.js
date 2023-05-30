@@ -24,6 +24,9 @@ export default async function FrontpageProduct(filter = null) {
   function createProductItemDOM(product_item) {
     const product = document.createElement("a");
     product.classList.add("frontpage-products__product", "grid__column--3");
+    product.setAttribute("data-id", product_item._id);
+    product.setAttribute("data-price", product_item.price);
+    product.setAttribute("data-name", product_item.name);
 
     product.setAttribute("href", `/product-details/?${product_item.slug}`);
 
