@@ -2,6 +2,8 @@ export default function slideShowProductImage() {
   let currentSlideIndex = 0;
   let touchStartX = 0;
   let touchEndX = 0;
+  let touchStartY = 0;
+  let touchEndY = 0;
 
   const slideshow = document.querySelector(".slideShowProduct");
 
@@ -21,20 +23,26 @@ export default function slideShowProductImage() {
     });
     function handleTouchStart(event) {
       touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
     }
 
     function handleTouchMove(event) {
       touchEndX = event.touches[0].clientX;
+      touchEndY = event.touches[0].clientY;
     }
 
     function handleTouchEnd() {
-      if (touchStartX - touchEndX > 50) {
-        // Swiped to the left, go to the next slide
-        increaseCurrentSlideIndex();
-        renderHtml();
-      } else if (touchEndX - touchStartX > 50) {
-        // Swiped to the right, go to the previous slide
-        decreaseCurrentSlideIndex();
+      const deltaX = touchEndX - touchStartX;
+      const deltaY = touchEndY - touchStartY;
+
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+          // Swiped to the right, go to the previous slide
+          decreaseCurrentSlideIndex();
+        } else {
+          // Swiped to the left, go to the next slide
+          increaseCurrentSlideIndex();
+        }
         renderHtml();
       }
     }
