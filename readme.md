@@ -13,10 +13,10 @@ AtmosFashion is an e-commerce website, project developed for the final exam and 
 
 ## Setup and Installation
 
-$ git clone https://github.com/Raazk10/AtmosFashion-Ecommerce-Website.git
-$ cd AtmosFashion-Ecommerce-Website
-$ npm install
-$ npm start
+- $ git clone https://github.com/Raazk10/AtmosFashion-Ecommerce-Website.git
+- $ cd AtmosFashion-Ecommerce-Website
+- $ npm install
+- $ npm start
 
 ## Technologies Used
 
