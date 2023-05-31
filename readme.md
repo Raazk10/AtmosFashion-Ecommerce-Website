@@ -1,37 +1,37 @@
-# AtmosFashion
+# AtmosFashion Ecommerce Website
 
-AtmosFashion is an e-commerce website that recommends clothing items based on the user's local weather. The project is built using HTML, CSS, and JavaScript, and integrates a weather API and map library. The website is responsive, ensuring a great user experience across different devices.
+AtmosFashion is an e-commerce website, project developed for the final exam and is not intended for the commercial purposes. It serves as an online platform for users to browse various clothing products. The website utilizes the Sanity database to store product information, ensuring a reliable and efficient system for managing product data.
 
-## Features
+## Key Features
 
 - Responsive e-commerce website with visually appealing design
 - Product filtering options
-- Shopping cart functionality
+- Cart functionality
 - Integration with Sanity for content management
+- Product details page which provide information about each product
+- Contact page which provide info of contact details
 
 ## Setup and Installation
 
-1. Clone the repository:
-   git clone https://github.com/yourusername/atmos-fashion.git
-
-2. Open the project folder and locate the `index.html` file.
-
-3. Open the `index.html` file in your preferred web browser.
+$ git clone https://github.com/Raazk10/AtmosFashion-Ecommerce-Website.git
+$ cd AtmosFashion-Ecommerce-Website
+$ npm install
+$ npm start
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Weather API
-- Sanity (headless CMS)
+- Sanity Studio
+- Netlify for website hosting
 
 ## Project Structure
 
 - `index.html`: Main HTML file containing the website structure.
-- `css/`: Folder containing all the CSS files for styling.
-- `js/`: Folder containing all the JavaScript files for functionality.
-- `img/`: Folder containing all the images used in the project.
+- `css/`: Folder containing all the CSS files and modules for styling.
+- `js/`: Folder containing all the JavaScript files and modules for functionality.
+- `asset/`: Folder containing all the images used in the project.
 
 ## Roadmap
 
@@ -45,14 +45,18 @@ The Minimum Viable Product (MVP) description can be found in the [MVP.md](MVP.md
 
 Please feel free to submit issues or pull requests to improve the project. All contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 - Figma for the design prototype
-- Weather API provider
 - Sanity for content management
-- Project inspiration and guidance from []
+- Project inspiration and guidance from [Alejandro V. Rojas, Carlo Alberto Burato]
 - Unsplash photo
+
+## Deployment
+
+The AtmosFashion Ecommerce Website is deployed using Netlify and Sanity.
+
+- Netlify Deployment: [https://atmosfashion.netlify.app]
+- Sanity Deployment: [https://atmosfashionecommerce.sanity.studio]
+
+Can access the live website by visiting Netlify Deployed Site Name.
