@@ -23,7 +23,7 @@ export default async function FrontpageProduct(filter = null) {
    */
   function createProductItemDOM(product_item) {
     const product = document.createElement("a");
-    product.classList.add("frontpage-products__product", "grid__column--3");
+    product.classList.add("frontpage-products__item", "grid__column--3");
     product.setAttribute("data-id", product_item._id);
     product.setAttribute("data-price", product_item.price);
     product.setAttribute("data-name", product_item.name);
@@ -31,28 +31,26 @@ export default async function FrontpageProduct(filter = null) {
     product.setAttribute("href", `/product-details/?${product_item.slug}`);
 
     const productFigure = document.createElement("figure");
-    productFigure.classList.add("frontpage-products__product-image");
+    productFigure.classList.add("frontpage-products__item-image");
 
     const productImg = document.createElement("img");
-    productImg.classList.add("frontpage-products__product-img");
+    productImg.classList.add("frontpage-products__item-img");
     productImg.src = product_item.previewImage;
     productImg.alt = product_item.name;
 
     const productInformation = document.createElement("figcaption");
-    productInformation.classList.add("frontpage-products__product-information");
+    productInformation.classList.add("frontpage-products__item-information");
 
     const productName = document.createElement("div");
-    productName.classList.add("frontpage-products__product-name");
+    productName.classList.add("frontpage-products__item-name");
     productName.textContent = product_item.name;
 
     const productPrice = document.createElement("div");
-    productPrice.classList.add("frontpage-products__product-price");
+    productPrice.classList.add("frontpage-products__item-price");
     productPrice.textContent = formatPrice(product_item.price);
 
     const productShopButton = document.createElement("button");
-    productShopButton.classList.add(
-      "frontpage-products__product-details-button"
-    );
+    productShopButton.classList.add("frontpage-products__item-details-button");
     productShopButton.textContent = "More Details";
 
     productFigure.appendChild(productImg);

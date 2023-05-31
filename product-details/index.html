@@ -4,72 +4,75 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AtmosFashion</title>
+	<title>Product Details Page</title>
+	<meta name="description"
+		content="Check out our latest product made from 100% sustainable materials. Perfect for casual wear, offering comfort, style, and environmental responsibility. Buy now at AtmosFashion.">
 
 	<link rel="icon" href="/_app/assets/fav-icon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="/_app/css/main.css">
 	<script type="module" src="/_app/js/main.js"></script>
 	<script type="module" src="/_app/js/cart.js"></script>
-
 </head>
 
 <body>
 	<header class="main-header grid">
 		<div class="main-header__logo grid__column--8">
 			<a href="/index.html" aria-label="Back to homepage">
-				<img src="/_app/assets/icon.png" alt="atmosfashion logo" />
+				<img src="/_app/assets/icon.png" alt="atmosfashion logo">
 			</a>
 		</div>
 
 		<div class="main-header__button grid__column--4">
-			<button class="main-header__button--cart">Cart </button><span class="product-quantity"></span>
+			<button class="main-header__button--cart" aria-label="Open cart">Cart</button><span
+				class="product-quantity"></span>
 		</div>
+
 		<!-- Cart Overlay -->
 		<div class="cart-overlay">
 			<div class="cart-overlay__header">
 				<h2>Your Products</h2>
-				<button class="cart-overlay__close-button">&times;</button>
+				<button class="cart-overlay__close-button" aria-label="close-cart">&times;</button>
 			</div>
+
 			<div class="cart-overlay__items--tables">
 				<div class="cart-overlay__items--table">Quantity </div>
 				<div class="cart-overlay__items--table">Name </div>
 				<div class="cart-overlay__items--table">Price </div>
 				<div class="cart-overlay__items--table"></div>
 			</div>
+
 			<div class="cart-overlay__items">
-
-
-
-
 				<div class="cart-overlay__product">
-
 					<!-- this to be added dynamically -->
-
 				</div>
-
-
-
 			</div>
+
 			<div class="cart-overlay__total">
 
 				<!-- cart item count updated from shoppingCart.js -->
 			</div>
+
 			<div class="cart-overlay__buttons">
 				<button class="cart-overlay__checkout-button">Checkout</button>
-				<button class="cart-overlay__empty-button">Empty</button>
+				<button class="cart-overlay__empty-button">Empty Cart</button>
 			</div>
 		</div>
-
 	</header>
-	<section class="slideShowProduct">
-		<div class="slideShowProduct__slides grid__column--8"></div>
-		<div class="slideShowProduct-controls">
-			<button class="slideShowProduct__button-previous">&#10094;</button>
-			<button class="slideShowProduct__button-next">&#10095;</button>
-		</div>
-	</section>
 
+	<!-- image slideshow -->
+	<div class="slideShowProduct">
+		<div class="slideShowProduct__slides grid__column--8">
+			<!-- image to be added dynamically -->
+		</div>
+
+		<div class="slideShowProduct-controls">
+			<button class="slideShowProduct__button-previous" aria-label="Previous Slide">&#10094;</button>
+			<button class="slideShowProduct__button-next" aria-label="Next Slide">&#10095;</button>
+		</div>
+	</div>
+
+	<!-- product details -->
 	<main class="product-details grid">
 		<div class="product-details__product-content grid__column--8">
 			<div class="product-name"></div>
@@ -83,32 +86,37 @@
 			<div class="product-details__stock"></div>
 			<button class="add-to-cart">Add to Cart</button>
 		</div>
-
 	</main>
 
 	<footer class="main-footer grid">
 		<div class="grid__column--8 main-footer__logo">
-			<img src="/_app/assets/icon.png" alt="Logo" />
+			<img src="/_app/assets/icon.png" alt="atmosFashion logo">
 		</div>
+
 		<div class="grid__column--4 main-footer__icon">
+
 			<div>
 				<h2 class="main-footer__icon-header">Follow us on</h2>
 			</div>
+
 			<div>
-				<a href="https://www.facebook.com/raazkt" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Facebook">
+				<a href="https://www.facebook.com/raazkt" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Facebook (opens in a new window)">
 					<i class="fab fa-facebook-f" style="color:#1877F2"></i>
 				</a>
-				<a href="https://twitter.com/rakioraag10" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Twitter">
+
+				<a href="https://twitter.com/rakioraag10" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Twitter (opens in a new window)">
 					<i class="fab fa-twitter" style="color:#1DA1F2"></i>
 				</a>
-				<a href="https://www.tiktok.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on TikTok">
+
+				<a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on TikTok (opens in a new window)">
 					<i class="fab fa-tiktok"></i>
 				</a>
-				<a href="https://www.instagram.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on instagram">
+
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on instagram (opens in a new window)">
 					<i class="fab fa-instagram" style="color:#E4405F;"></i>
 				</a>
 			</div>
