@@ -12,7 +12,7 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: var(--gap-padding);
 	margin: 10px 0;
 
 }
@@ -21,7 +21,7 @@
 	background-color: var(--color-filter-button);
 	color: var(--color-text-black);
 	border: none;
-	border-radius: 20px;
+	border-radius: var(--radius-border);
 	padding: 5px 40px;
 	cursor: pointer;
 	text-transform: uppercase;

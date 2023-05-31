@@ -1,7 +1,5 @@
 .main-footer {
-	background: linear-gradient(to bottom, var(--color-box-background), rgba(19, 18, 18, 0));
-	color: var(--color-box-foreground);
-	padding: var(--gap-box-padding);
+	background: linear-gradient(to bottom, var(--color-background-black), rgba(19, 18, 18, 0));
 	justify-content: space-between;
 }
 
@@ -12,7 +10,6 @@
 	height: auto;
 	margin-top: 20px;
 }
-
 
 .main-footer__icon {
 	display: flex;
@@ -35,7 +32,6 @@
 
 	background: none;
 	border: none;
-	color: var(--color-box-foreground);
 	cursor: pointer;
 	transition: color 0.2s ease-in-out;
 	margin: 5px;

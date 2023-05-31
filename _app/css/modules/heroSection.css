@@ -1,7 +1,6 @@
 .heroSection {
 	margin-bottom: var(--gap-section);
 	position: relative;
-	background: aqua;
 }
 
 .heroSection__image {
@@ -28,6 +27,8 @@
 	font-size: 1rem;
 	font-weight: 100;
 	color: var(--color-text-black);
+	margin-bottom: var(--gap-padding);
+
 }
 
 .heroSection__button {
@@ -40,82 +41,68 @@
 	cursor: pointer;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin-top: var(--gap-padding);
+
+
 }
 
 .heroSection__button:hover {
 	background: var(--color-button-hover);
 }
 
-/* Add the following media queries to adjust styles for smaller screens */
 @media (max-width: 1124px) {
 	.heroSection__content {
 		left: 70%;
-		/* Adjust the left position to center the content */
+
 	}
 
 	.heroSection__header {
 		font-size: 1rem;
-		/* Reduce the header font size */
 	}
 
 	.heroSection__sub-header {
 		font-size: 0.8rem;
-		/* Reduce the sub-header font size */
 	}
 
 	.heroSection__button {
 		padding: 0.4rem 0.8rem;
-		/* Adjust the padding for the button */
 		font-size: 0.9rem;
-		/* Adjust the font size for the button */
 	}
 }
 
 @media (max-width: 768px) {
 	.heroSection__content {
 		left: 70%;
-		/* Adjust the left position to center the content */
 	}
 
 	.heroSection__header {
 		font-size: 1rem;
-		/* Reduce the header font size */
 	}
 
 	.heroSection__sub-header {
 		font-size: 0.6rem;
-		/* Reduce the sub-header font size */
 	}
 
 	.heroSection__button {
 		padding: 0.3rem 0.6rem;
-		/* Further adjust the padding for the button */
 		font-size: 0.8rem;
-		/* Further adjust the font size for the button */
 	}
 }
 
 @media (max-width: 675px) {
 	.heroSection__content {
 		left: 70%;
-		/* Adjust the left position to center the content */
 	}
 
 	.heroSection__header {
 		font-size: 1rem;
-		/* Further reduce the header font size */
 	}
 
 	.heroSection__sub-header {
 		font-size: 0.5rem;
-		/* Further reduce the sub-header font size */
 	}
 
 	.heroSection__button {
 		padding: 0.3rem 0.6rem;
-		/* Further adjust the padding for the button */
-		font-size: 0.6rem;
-		/* Further adjust the font size for the button */
+		font-size: 0.4rem;
 	}
 }

@@ -1,7 +1,5 @@
 .main-header__logo {
-	background: linear-gradient(to bottom, var(--color-box-background), rgba(19, 18, 18, 0));
-	color: var(--color-box-foreground);
-	padding: var(--gap-box-padding);
+	background: linear-gradient(to bottom, var(--color-background-black), rgba(19, 18, 18, 0));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -14,11 +12,9 @@
 	height: auto;
 }
 
-
 .main-header__button {
 	background: var(--color-contact-button);
 	color: var(--color-text-white);
-	padding: var(--gap-box-padding);
 	display: flex;
 	justify-content: center;
 	align-items: center;

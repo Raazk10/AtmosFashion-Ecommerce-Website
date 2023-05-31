@@ -3,7 +3,7 @@
 	padding: var(--gap-section);
 }
 
-.frontpage-products__product {
+.frontpage-products__item {
 	background: var(--color-product-card-background);
 	overflow: hidden;
 	border: 1px solid rebeccapurple;
@@ -15,48 +15,47 @@
 	height: 350px;
 }
 
-
-.frontpage-products__product-image {
+.frontpage-products__item-image {
 	height: 70%;
 	width: 100%;
 
 }
 
-.frontpage-products__product-img {
+.frontpage-products__item-img {
 	height: 200px;
 	width: 100%;
 	object-fit: cover;
 	transition: transform 0.3s ease-in-out;
 }
 
-.frontpage-products__product:hover .frontpage-products__product-img {
+.frontpage-products__item:hover .frontpage-products__item-img {
 	transform: scale(1.1);
 }
 
-.frontpage-products__product-information {
+.frontpage-products__item-information {
 	display: flex;
 	justify-content: space-between;
 	padding: var(--gap-padding);
 	gap: var(--gap-product-information);
 }
 
-.frontpage-products__product-name {
+.frontpage-products__item-name {
 	margin-bottom: var(--gap-padding);
 	color: var(--color-text-black);
 	font-size: 1.2rem;
 
 }
 
-.frontpage-products__product-price {
+.frontpage-products__item-price {
 	color: var(--color-text-black);
 	font-size: 1rem;
 
 }
 
-.frontpage-products__product-details-button {
+.frontpage-products__item-details-button {
 	background: var(--color-button);
 	color: var(--color-text-white);
-	padding: 10px;
+	padding: var(--gap-padding);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -66,17 +65,17 @@
 	margin-bottom: var(--gap-proudct);
 }
 
-.frontpage-products__product-details-button:hover {
+.frontpage-products__item-details-button:hover {
 	background: var(--color-button-hover);
 }
 
 @media screen and (max-width:1024px) {
-	.frontpage-products__product {
+	.frontpage-products__item {
 		grid-column: span 4;
 
 	}
 
-	.frontpage-products__product-details-button {
+	.frontpage-products__item-details-button {
 
 		padding: 10px 10px;
 		font-size: 0.8rem;
@@ -85,7 +84,7 @@
 }
 
 @media screen and (max-width:768px) {
-	.frontpage-products__product {
+	.frontpage-products__item {
 		grid-column: span 6;
 
 	}
@@ -93,7 +92,7 @@
 }
 
 @media screen and (max-width:524px) {
-	.frontpage-products__product {
+	.frontpage-products__item {
 		grid-column: span 12;
 
 	}
