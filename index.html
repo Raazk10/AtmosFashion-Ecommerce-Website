@@ -5,9 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AtmosFashion</title>
+	<meta name="description"
+		content="AtmosFashion - Discover our latest collection of sustainable, high-quality clothing. Explore our range of men's and women's clothing. Elevate your style with AtmosFashion.">
 
 	<link rel="icon" href="/_app/assets/fav-icon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="/_app/css/main.css">
 	<script type="module" src="/_app/js/main.js"></script>
 </head>
@@ -17,10 +19,9 @@
 		<div class="main-header__logo grid__column--8">
 			<img src="./_app/assets/icon.png" alt="atmosfashion logo">
 		</div>
+
 		<div class="main-header__button grid__column--4">
-			<a href="/contact">
-				<button class="main-header__button--contact">Contact-Us</button>
-			</a>
+			<a href="/contact" class="main-header__button--contact">Contact-Us</a>
 		</div>
 	</header>
 
@@ -30,21 +31,23 @@
 				<h1 class="heroSection__header">Elevate Your Style</h1>
 				<h2 class="heroSection__sub-header">Discover our latest collection of sustainable, high-quality clothing.
 				</h2>
-				<a href="#mainProducts">
-					<button class="heroSection__button">See
-						our products below</button></a>
+				<a href="#mainProducts" class="heroSection__button">See our products below</a>
 			</div>
 			<img class="heroSection__image" src="./_app/assets/hero_image.jpeg"
 				alt="A woman with hat and glass with black coat">
 		</div>
 	</section>
 
+	<!-- Filter section of the product -->
 	<section class="filterSection grid">
+		<h2 class="filterSection__heading">Filter Products</h2>
 		<div class="grid__column--12">
+
 			<div class="filterSection__row">
 				<button class="filterSection__button" data-filter="Men">Men</button>
 				<button class="filterSection__button" data-filter="Women">Women</button>
 			</div>
+
 			<div class="filterSection__row">
 				<button class="filterSection__button" data-filter="Pant">Pant</button>
 				<button class="filterSection__button" data-filter="T-Shirt">T-Shirt</button>
@@ -60,29 +63,35 @@
 
 	<footer class="main-footer grid">
 		<div class="grid__column--8 main-footer__logo">
-			<img src="./_app/assets/icon.png" alt="Logo" />
+			<img src="./_app/assets/icon.png" alt="atmosFashion logo">
 		</div>
+
 		<div class="grid__column--4 main-footer__icon">
 			<div>
 				<h2 class="main-footer__icon-header">Follow us on</h2>
 			</div>
+
 			<div>
-				<a href="https://www.facebook.com/raazkt" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Facebook">
+				<a href="https://www.facebook.com/raazkt" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Facebook (opens in a new window)">
 					<i class="fab fa-facebook-f" style="color:#1877F2"></i>
 				</a>
-				<a href="https://twitter.com/rakioraag10" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Twitter">
+
+				<a href="https://twitter.com/rakioraag10" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Twitter (opens in a new window)">
 					<i class="fab fa-twitter" style="color:#1DA1F2"></i>
 				</a>
-				<a href="https://www.tiktok.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on TikTok">
+
+				<a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on TikTok (opens in a new window)">
 					<i class="fab fa-tiktok"></i>
 				</a>
-				<a href="https://www.instagram.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on instagram">
+
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on instagram (opens in a new window)">
 					<i class="fab fa-instagram" style="color:#E4405F;"></i>
 				</a>
+
 			</div>
 		</div>
 	</footer>

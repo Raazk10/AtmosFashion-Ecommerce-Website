@@ -4,10 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact | AtmosFashion</title>
+	<title>Contact Page</title>
+	<meta name="description"
+		content="Get in touch with AtmosFashion. We're ready to help you with any questions about our sustainable, high-quality clothing. Contact us for support or to learn more about our products.">
 
 	<link rel="icon" href="/_app/assets/fav-icon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="/_app/css/main.css">
 	<script type="module" src="/_app/js/contact.js"></script>
 </head>
@@ -16,17 +18,20 @@
 	<header class="main-header grid">
 		<div class="main-header__logo grid__column--8">
 			<a href="/index.html" aria-label="back to homepage">
-				<img src="/_app/assets/icon.png" alt="atmosfashion logo" />
+				<img src="/_app/assets/icon.png" alt="atmosfashion logo">
 			</a>
 		</div>
 
 		<div class="main-header__button grid__column--4">
-			<button id="goBackButton" class="main-header__button--contact"> Go Back</button>
+			<a href="/index.html" id="goBackButton" class="main-header__button--contact">Go Back</a>
 		</div>
 	</header>
 
+	<!-- Contact details -->
 	<main class="contact-details grid">
-		<div class="contact-details__content grid__column--12"></div>
+		<div class="contact-details__content grid__column--12">
+			<!-- Information added dynamically from database-->
+		</div>
 		<div class="contact-details__info grid__column--12">
 			<h2 class="contact-details__subtitle">Contact Information:</h2>
 			<p class="contact-details__info-name"></p>
@@ -38,27 +43,33 @@
 
 	<footer class="main-footer grid">
 		<div class="grid__column--8 main-footer__logo">
-			<img src="/_app/assets/icon.png" alt="Logo" />
+			<img src="/_app/assets/icon.png" alt="atmosFashion logo">
 		</div>
+
 		<div class="grid__column--4 main-footer__icon">
+
 			<div>
 				<h2 class="main-footer__icon-header">Follow us on</h2>
 			</div>
+
 			<div>
-				<a href="https://www.facebook.com/raazkt" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Facebook">
+				<a href="https://www.facebook.com/raazkt" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Facebook (opens in a new window)">
 					<i class="fab fa-facebook-f" style="color:#1877F2"></i>
 				</a>
-				<a href="https://twitter.com/rakioraag10" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on Twitter">
+
+				<a href="https://twitter.com/rakioraag10" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on Twitter (opens in a new window)">
 					<i class="fab fa-twitter" style="color:#1DA1F2"></i>
 				</a>
-				<a href="https://www.tiktok.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on TikTok">
+
+				<a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on TikTok (opens in a new window)">
 					<i class="fab fa-tiktok"></i>
 				</a>
-				<a href="https://www.instagram.com/" target="_blank" class="main-footer__button--social"
-					aria-label="Follow us on instagram">
+
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="main-footer__button--social"
+					aria-label="Follow us on instagram (opens in a new window)">
 					<i class="fab fa-instagram" style="color:#E4405F;"></i>
 				</a>
 			</div>

@@ -1,19 +1,19 @@
 .contact-details__content {
 	background-color: var(--color-background);
 	color: var(--color-text-black);
-	padding: var(--gap-box-padding);
+	padding: var(--gap-padding);
 	text-transform: none;
 }
 
 .contact-details__subtitle {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin-bottom: var(--gap-row);
 }
 
 .contact-details__info {
-	background-color: var(--color-box-background);
+	background-color: var(--color-background-black);
 	color: var(--color-text-white);
-	padding: var(--gap-box-padding);
+	padding: var(--gap-padding);
 	margin-top: var(--gap-row);
 	margin-bottom: var(--gap-row);
 	text-transform: none;
@@ -33,6 +33,6 @@
 }
 
 .contact-details__info-value {
-	font-weight: bold;
+	font-weight: 700;
 
 }
