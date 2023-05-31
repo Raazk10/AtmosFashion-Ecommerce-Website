@@ -4,12 +4,12 @@ The Minimum Viable Product (MVP) of the AtmosFashion project includes the follow
 
 1. Responsive e-commerce website:
 
-   - A visually appealing design that adapts to different screen sizes (desktop, tablet, mobile).
+   - A visually appealing design that adapts to different screen sizes (desktop and mobile).
    - Semantic HTML, CSS, and JavaScript for better accessibility and performance.
 
 2. Clothing recommendations:
 
-   - Display of relevant clothing items based on the user's local weather conditions.
+   - Display of relevant clothing items on main page.
 
 3. Product filtering:
 
@@ -21,4 +21,10 @@ The Minimum Viable Product (MVP) of the AtmosFashion project includes the follow
    - Display cart summary with total price and item count.
 
 5. Display product details:
+
    - Display product summary with different details such as price, color etc.
+   - Display product image with slideshow in product-details page.
+
+6. Display contact details:
+   - Display contact summary with different details such as name, address, phone and email.
+   - Display information about company.
