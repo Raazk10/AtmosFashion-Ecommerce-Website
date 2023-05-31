@@ -1,4 +1,5 @@
 import { sanity } from "../sanity.js";
+import { displayError } from "./handleError.js";
 
 /**
  * Fetches frontpage products from Sanity CMS.
@@ -37,7 +38,6 @@ export default async function FetchFrontpageProduct(filter = null) {
     const products = await sanity.fetch(query);
     return products;
   } catch (error) {
-    console.log(Error.message);
-    alert(Error.message);
+    displayError(error);
   }
 }

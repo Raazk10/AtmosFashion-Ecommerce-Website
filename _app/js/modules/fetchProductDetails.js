@@ -1,5 +1,6 @@
 import { sanity } from "../sanity.js";
 import { readUrl } from "../util/readUrl.js";
+import { displayError } from "./handleError.js";
 
 /**
  * Fetches product details from the server based on the current URL.
@@ -28,6 +29,11 @@ export default async function FetchProductDetails() {
   }`;
 
   // Fetch the product details using the query
-  const product = await sanity.fetch(query);
-  return product[0];
+
+  try {
+    const product = await sanity.fetch(query);
+    return product[0];
+  } catch (error) {
+    displayError(error);
+  }
 }

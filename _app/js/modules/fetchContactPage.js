@@ -1,5 +1,6 @@
 import { sanity } from "../sanity.js";
 import { readUrl } from "../util/readUrl.js";
+import { displayError } from "./handleError.js";
 
 /**
  * Fetches the contact us page based on the current URL slug.
@@ -20,7 +21,6 @@ export default async function FetchContactUsPage() {
     const contact = await sanity.fetch(queryContact);
     return contact;
   } catch (error) {
-    console.log(Error.message);
-    alert(Error.message);
+    displayError(error);
   }
 }
