@@ -41,12 +41,14 @@
 	.product-details__colors {
 		flex-direction: column;
 		gap: var(--gap-row);
+		margin-bottom: var(--gap-row);
 	}
 
 	.product-details__sizes div,
 	.product-details__colors div {
 		padding: var(--gap-padding);
 		font-size: 0.8em;
+		margin-bottom: var(--gap-row);
 	}
 
 	.add-to-cart {
