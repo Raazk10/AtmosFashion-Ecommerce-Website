@@ -24,16 +24,15 @@ The AtmosFashion project roadmap consists of the following key phases and milest
 4. HTML & CSS Implementation:
 
    - Write semantic HTML elements for each page.
-   - Implement reusable components for clothing items, categories, filters, and pagination.
+   - Implement reusable components for clothing items, categories, filters, and cart.
    - Style the website using CSS according to the Figma design.
    - Add media queries for a mobile-friendly design.
 
 5. JavaScript Functionality:
 
    - Fetch data from Sanity and populate the HTML elements.
-   - Implement user interactions like adding items to the cart, updating the cart, and checking out.
-   - Integrate the Weather API and display relevant clothing items based on weather data.
-   - Integrate the map using a JavaScript mapping library.
+   - Implement user interactions like adding items to the cart, updating the cart, and Emtying cart.
+   - Implement slideshow to show the images of the product
 
 6. Testing & Optimization:
 
@@ -44,5 +43,4 @@ The AtmosFashion project roadmap consists of the following key phases and milest
 7. Deployment & Documentation:
    - Deploy the website to a hosting provider like GitHub Pages or Netlify.
    - Set up continuous deployment for automatic updates.
-   - Document the project's architecture, features, and decisions.
-   - gather feedback for potential improvements.
+   - Document the project's architecture, features, MVP.
