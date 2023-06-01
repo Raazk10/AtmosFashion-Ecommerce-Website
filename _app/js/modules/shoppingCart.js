@@ -1,3 +1,10 @@
+/**
+   * This shoppping cart functionality is inspired from Alejandro demo project
+      to suit as per need to my project and made necessary changes to get desired result
+      for this project
+   * 
+   */
+
 import formatPrice from "../util/format-price.js";
 
 /**
@@ -223,5 +230,3 @@ export default function ShoppingCart() {
   //Render the cart items initially
   renderCartItems();
 }
-
-// part of the code is used from the Alejandro demo project

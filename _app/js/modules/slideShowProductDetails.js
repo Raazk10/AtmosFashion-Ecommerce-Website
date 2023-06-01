@@ -1,4 +1,6 @@
 /**
+ * Some part of the Code is used from one our slideShow lectures (module4 lecture)
+ *
  * Initializes a slideshow with previous and next buttons.
  */
 
