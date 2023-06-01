@@ -61,6 +61,10 @@ Feel free to use the project as long as the owner is informed
 
 - https://github.com/Raazk10/AtmosFashion-Ecommerce-Website
 
+## Dbdiagram Link
+
+- https://dbdiagram.io/d/6478d52c722eb774943bbedd
+
 ## Deployment
 
 The AtmosFashion Ecommerce Website is deployed using Netlify and Sanity.
