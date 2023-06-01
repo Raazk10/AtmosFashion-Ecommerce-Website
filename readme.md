@@ -24,6 +24,7 @@ AtmosFashion is an e-commerce website, project developed for the final exam and 
 - CSS3
 - JavaScript
 - Sanity Studio
+- Figma
 - Netlify for website hosting
 
 ## Project Structure
@@ -45,12 +46,20 @@ The Minimum Viable Product (MVP) description can be found in the [MVP.md](MVP.md
 
 Please feel free to submit issues or pull requests to improve the project. All contributions are welcome!
 
+## License
+
+Feel free to use the project as long as the owner is informed
+
 ## Acknowledgments
 
+- Project inspiration and guidance from [Alejandro V. Rojas, Carlo Alberto Burato]
 - Figma for the design prototype
 - Sanity for content management
-- Project inspiration and guidance from [Alejandro V. Rojas, Carlo Alberto Burato]
 - Unsplash photo
+
+## Github Link
+
+- https://github.com/Raazk10/AtmosFashion-Ecommerce-Website
 
 ## Deployment
 

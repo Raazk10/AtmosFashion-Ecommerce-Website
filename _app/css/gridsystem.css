@@ -1,3 +1,8 @@
+/* This grid system is inspired by the Alejandro lecture, as I found this very easy to setup 
+grid system in my project */
+
+/* Set the grid container properties */
+
 .grid {
 	width: 100%;
 	display: grid;
