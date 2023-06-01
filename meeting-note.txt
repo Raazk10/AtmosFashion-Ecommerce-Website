@@ -1,0 +1,97 @@
+			# Meeting Note/Review - [01/05/2023]
+*******.......................................*******
+
+Attendees: ...
+
+Agenda:
+- [find out the project to be done]
+- [Take the inspiration and ideas]
+
+Meeting Summary:
+Todays meeting was focused on what project to do and to came up with ideas
+
+
+Next Sprint:
+- [Discuss the project]
+- [Write MVP]
+- [Draw DB Diagram]
+- [Design figma prototype]
+
+# Meeting Note/Review - [08/05/2023]
+
+Attendees: ...
+
+Agenda:
+- [Setup project folder]
+- [Install sanity under _studio ]
+- [Create sanity project]
+- [Create sanity Schema ]
+- [Setup github project]
+
+Notes: 
+Finsihed with the MVP of the first week.
+
+Meeting Summary 
+Todays meeting was focused on what we have done until now and We discussed about the agenda of this week which must me done.
+
+
+Next Sprint:
+- [Add product data to the sanity database]
+- [Create and style frontend for the main-page, details-page, and contact-page]
+- [Use grid system for the design]
+
+			# Meeting Note/Review - [15/05/2023]
+	*******.......................................*******
+
+
+Attendees: ...
+
+Notes: 
+Finsihed with the agenda of the week before.
+
+
+Agenda:
+- [Fetch data for the main-page, details-page and contact-page ]
+- [Get product-card data dynamically]
+- [Render fetched data]
+- [Add link to more-details-button, contact-button , logo, Go-back-button ]
+
+
+Meeting Summary:
+Todays meeting was focused on what we have done until now. We discussed about the agenda of this week which must me done. We decided to put the cart function in product-details page. There was some challanges doing the responsiveness of the website. Sometimes card got bigger and sometime smaller.
+
+
+Next Sprint:
+- [Add filter functionality]
+- [Add cart to product-details page]
+- [Add handleError function]
+- [Comment out code]
+- [Focus to make site accessibilty for all users]
+- [Write Readme of the project]
+- [Deploy site]
+
+
+			# Meeting Note/Review - [22/05/2023]
+*******.......................................*******
+
+Attendees: ...
+
+Notes: 
+Finsihed with the agenda of the week before. This is the last meeting before project delivery date.
+
+Agenda:
+- [Deliver the project]
+
+Meeting Summary:
+We decided not to have cart checkout button functionality. There were some challanges to made the site accessibilty but in the end got the result but still not perfect which can be our future work.
+
+
+
+
+
+
+
+
+
+
+
