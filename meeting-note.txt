@@ -76,10 +76,13 @@ Next Sprint:
 
 Attendees: ...
 
-Notes: 
-Finsihed with the agenda of the week before. This is the last meeting before project delivery date.
+Challanges: 
+Started to commit directly on main branch without making any feature branch. Had to do all the project
+again because there were so many commits to rebase and create a new branch. 
+
 
 Agenda:
+- [Do the project as before and follow the agenda but make feature branch this time]
 - [Deliver the project]
 
 Meeting Summary:
